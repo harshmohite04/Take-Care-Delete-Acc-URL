@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-
+import Logo from "./assets/logo1.png"
 interface UserPreferences {
   dataDeletion: 'partial' | 'full' | 'auto';
 }
@@ -64,7 +64,7 @@ export default function App() {
       <div className="bg-white shadow-2xl rounded-3xl p-8 w-full max-w-2xl">
         {/* Logo Section */}
         <div className="flex flex-col items-center mb-8">
-          <img className="w-30 h-30 bg-blue-600 rounded-full flex items-center justify-center mb-4 border-2 border-black" src="../src/assets/logo1.png" alt="CareTaker Logo" />
+          <img className="w-30 h-30 bg-blue-600 rounded-full flex items-center justify-center mb-4 border-2 border-black" src={Logo} alt="CareTaker Logo" />
           <h1 className="text-3xl font-bold text-gray-800">TakeCare</h1>
           <p className="text-gray-500 mt-2">Your Personal Health Companion</p>
         </div>
